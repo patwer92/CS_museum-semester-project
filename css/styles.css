@@ -24,7 +24,7 @@ a {
 .nav {
     margin-top: 20px;
     text-align: right;
-    min-height: 8vh;
+    min-height: 10vh;
 }
 
 .logo {
@@ -35,7 +35,7 @@ a {
 }
 
 .logo-text {
-    margin-top: 20px;
+    margin-top: 23px;
     font-family: oswald, sans-serif;
     float: left;
     color: #ff8c1a;
@@ -86,7 +86,7 @@ label {
 /* MAIN PAGE SECTION */
 
 .home-section {
-    height: 90vh;
+    height: 92vh;
     background-image: url(/images/michael-van-kerckhove-iN3xWBNHmnw-unsplash-min-min.jpg);
     background-size: cover;
     background-position: center;
