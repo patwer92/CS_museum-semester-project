@@ -11,7 +11,7 @@ html {
 }
 
 body {
-    font-family: "helvetica neue", sans-serif;
+    font-family: "Open-sans", sans-serif;
     margin: 0;
 }
 
@@ -28,8 +28,9 @@ a {
 }
 
 .logo {
-    height: 60px;
-    width: 70px;
+    margin: 0;
+    height: 70px;
+    width: 80px;
     float: left;
 }
 
@@ -62,7 +63,7 @@ a {
     color: black;
     margin: 0 30px;
     line-height: 70px;
-    font-size: 10px;
+    font-size: 1rem;
 }
 
 .menu span {
@@ -74,7 +75,7 @@ label {
     font-size: 26px;
     line-height: 70px;
     display: none;
-    width: 26px;
+    width: 2.6rem;
     float: right;
 }
 
@@ -112,13 +113,13 @@ label {
     letter-spacing: 1.5px;
     color: white;
     text-transform: uppercase;
-    font-size: 10px;
+    font-size: 1.2rem;
 }
 
 .home-box1 h2 {
     margin-top: 10px;
     color: #d75758;
-    font-size: 30px;
+    font-size: 3.5rem;
     line-height: 50px;
     text-transform: capitalize;
 }
@@ -131,7 +132,7 @@ label {
 .home-box2 h2 {
     color: white;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 3rem;
 }
 
 .home-box2 h1 {
@@ -141,7 +142,7 @@ label {
     letter-spacing: 2px;
     text-align: left;
     line-height: 40px;
-    font-size: 10px;
+    font-size: 1.2rem;
 }
 
 .explore-btn {
@@ -155,8 +156,8 @@ label {
     border-radius: 50px;
     border: none;
     font-family: "Helvetica neue", sans-serif;
-    font-size: 12px;
-    letter-spacing: 2px;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
     text-transform: uppercase;
     color: whitesmoke;
     background: #01c9d6;
