@@ -19,6 +19,28 @@ a {
     text-decoration: none;
 }
 
+/* GLOBAL CLASSES */
+
+.site-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    width: 200px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.2rem;
+    text-transform: uppercase;
+    color: whitesmoke;
+    background: #01c9d6;
+    cursor: pointer;
+}
+
 /* HEADER */
 
 .nav {
@@ -64,6 +86,7 @@ a {
     margin: 0 30px;
     line-height: 70px;
     font-size: 1rem;
+    font-weight: 600;
 }
 
 .menu span {
@@ -94,17 +117,20 @@ label {
 
 .home-box1,
 .home-box2 {
+    margin-left: 40px;
+    margin-right: 40px;
     text-align: center;
-    width: 380px;
+    width: 500px;
     background: rgba(0, 0, 0, 0.8);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
 }
 
 .home-box1 {
-    height: 200px;
+    height: 250px;
     margin-bottom: 10vh;
 }
 
@@ -114,6 +140,7 @@ label {
     color: white;
     text-transform: uppercase;
     font-size: 1.2rem;
+    font-weight: 600;
 }
 
 .home-box1 h2 {
@@ -143,25 +170,7 @@ label {
     text-align: left;
     line-height: 40px;
     font-size: 1.2rem;
-}
-
-.explore-btn {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 25px;
-    width: 200px;
-    height: 40px;
-    border-radius: 50px;
-    border: none;
-    font-family: "Helvetica neue", sans-serif;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    text-transform: uppercase;
-    color: whitesmoke;
-    background: #01c9d6;
-    cursor: pointer;
+    font-weight: 700;
 }
 
 /* HOME-BOX2 CONTENT / Styling of text. */
@@ -176,7 +185,7 @@ label {
 
 /* EXPLORE SECTION */
 
-.explore-section {
+.discover-section {
     height: 100vh;
     background-image: url(/images/background-2462432_1920-min.jpg);
     display: flex;
@@ -185,25 +194,69 @@ label {
     align-items: center;
 }
 
-.explore-container1 {
+.discover-container1,
+.discover-container2 {
     margin: 25px;
-    width: 400px;
-    height: 400px;
-    background: red;
+    width: 80%;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
-.explore-container2 {
-    margin: 25px;
-    width: 400px;
+.discover-textbox1,
+.discover-textbox2 {
+    width: 600px;
     height: 400px;
-    background: blue;
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+}
+
+.discover-textbox1 h2,
+.discover-textbox2 h2 {
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    color: #d75758;
+}
+
+.discover-textbox1 p,
+.discover-textbox2 p {
+    text-align: left;
+    margin: 30px 60px;
+    font-size: 1.2rem;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+.discover-container1 img,
+.discover-container2 img {
+    height: 450px;
+    width: 450px;
+    border-radius: 50%;
 }
 
 /* MEDIA QUERIES */
 
 /* HEADER MEDIA QUERY */
 
-@media only screen and (max-width: 1062px) {
+@media only screen and (max-width: 800px) {
+    /* GLOBAL CLASSES RESPONSIVE MODE */
+
+    .site-btn {
+        padding: 5px;
+        width: 150px;
+        height: 40px;
+        font-size: 1rem;
+        letter-spacing: 0.2rem;
+    }
+
+    /* NAV BAR RESPONSIVE MODE*/
+
     label {
         display: block;
         cursor: pointer;
@@ -227,5 +280,99 @@ label {
 
     #toggle:checked + .menu {
         display: block;
+    }
+
+    /* HOME-PAGE RESPONSIVE MODE */
+
+    .home-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .home-box1,
+    .home-box2 {
+        width: 380px;
+    }
+
+    .home-box1 {
+        height: 200px;
+    }
+    .home-box2 {
+        height: 380px;
+    }
+}
+
+/* DISCOVER PAGE RESPONSIVE MODE */
+
+@media only screen and (max-width: 1200px) {
+    .discover-textbox1,
+    .discover-textbox2 {
+        width: 360px;
+        height: 320px;
+    }
+
+    .discover-container1 img,
+    .discover-container2 img {
+        height: 300px;
+        width: 300px;
+    }
+
+    .discover-textbox1 h2,
+    .discover-textbox2 h2 {
+        font-size: 2rem;
+    }
+
+    .discover-textbox1 p,
+    .discover-textbox2 p {
+        margin: 25px 40px;
+        font-size: 1.2rem;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .site-btn {
+        padding: 5px;
+        width: 150px;
+        height: 40px;
+        font-size: 0.8rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .discover-container1,
+    .discover-container2 {
+        margin: 0px;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .discover-textbox1,
+    .discover-textbox2 {
+        width: 220px;
+        height: 320px;
+    }
+
+    .discover-container1 img,
+    .discover-container2 img {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+    }
+
+    .discover-textbox1 h2,
+    .discover-textbox2 h2 {
+        font-size: 1.2rem;
+    }
+
+    .discover-textbox1 p,
+    .discover-textbox2 p {
+        margin: 15px 15px;
+        font-size: 0.9rem;
+        line-height: 25px;
     }
 }
